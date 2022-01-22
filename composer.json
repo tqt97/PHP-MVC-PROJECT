@@ -1,0 +1,18 @@
+{
+    "name": "admin/phpmvc-framework",
+    "description": "learn php mvc",
+    "autoload": {
+        "psr-4": {
+            "app\\": "./"
+        }
+    },
+    "authors": [
+        {
+            "name": "TQT DEV",
+            "email": "quoctuanit2018@gmail.com"
+        }
+    ],
+    "require": {
+        "vlucas/phpdotenv": "^5.4"
+    }
+}
