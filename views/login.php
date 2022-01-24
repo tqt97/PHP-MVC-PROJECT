@@ -1,16 +1,10 @@
+<?php
+use app\core\form\Form;
+?>
 <h1 class="text-center text-bold">Login form</h1>
-<form action="" method="POST"> 
-    <div class="mb-3">
-        <label class="form-label">Subject</label>
-        <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject">
-    </div>
-    <div class="mb-3">
-        <label class="form-label">Email</label>
-        <input type="email" class="form-control" name="email" placeholder="email" id="email" >
-    </div>   
-    <div class="mb-3">
-        <label class="form-label">Body</label>
-        <textarea class="form-control" id="body" name="body"></textarea>
-    </div>    
-    <button type="submit" class="btn btn-success">Submit</button>
-</form>
+
+<?php $form = Form::begin('', "post") ?>
+<?php echo $form->field($model, 'email') ?>
+<?php echo $form->field($model, 'password')->passwordField() ?>
+<button type="submit" class="btn btn-success" id="submit">Login</button>
+<?php Form::end() ?>
