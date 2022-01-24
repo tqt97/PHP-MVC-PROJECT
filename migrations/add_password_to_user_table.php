@@ -1,6 +1,6 @@
 <?php
 
-class m0002_add_password_to_user_table
+class add_password_to_user_table
 {
     public function up()
     {

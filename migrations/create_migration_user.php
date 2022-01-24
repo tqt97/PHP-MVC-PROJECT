@@ -1,6 +1,6 @@
 <?php
 
-class m0001_initial
+class create_migration_user
 {
     public function up()
     {
